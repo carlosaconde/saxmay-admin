@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
+
 export default function NavBar() {
   return (
     <Box sx={{ width:'100vw' }}>
@@ -21,9 +22,12 @@ export default function NavBar() {
           >
             <MenuIcon />
           </IconButton>
+          
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Usuarios
           </Typography>
+          
+          
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Deportes
           </Typography>
