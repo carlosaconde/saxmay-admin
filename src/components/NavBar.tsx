@@ -6,13 +6,22 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-
+import { routes } from '../routes/routes';
+import { BrowserRouter, NavLink,Routes,Navigate,Route } from 'react-router-dom';
 
 export default function NavBar() {
+    console.log(routes);
   return (
     <Box sx={{ width:'100vw' }}>
-      <AppBar position="static">
+        <BrowserRouter>
+        
+        <AppBar position="static">
+
+      
+
+
         <Toolbar>
+            <NavLink to={routes[0].to}> {routes[0].name}</NavLink>
           <IconButton
             size="large"
             edge="start"
@@ -37,6 +46,9 @@ export default function NavBar() {
           <Button color="inherit">Log-out</Button>
         </Toolbar>
       </AppBar>
+        
+        </BrowserRouter>
+      
     </Box>
   );
 }
