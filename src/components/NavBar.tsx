@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { routes } from '../routes/Routes';
 
 
 import {
@@ -12,7 +13,8 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import { routes } from "../routes/Routes";
+
+
 
 export default function NavBar() {
   console.log(routes);
