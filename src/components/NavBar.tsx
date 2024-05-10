@@ -14,6 +14,7 @@ import {
 } from "react-router-dom";
 import { routes } from "../routes/Routes";
 
+
 export default function NavBar() {
   console.log(routes);
   return (
