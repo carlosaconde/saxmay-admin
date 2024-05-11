@@ -1,7 +1,8 @@
-import Login from "../pages/Login";
+
 import Promos from "../pages/Promos";
 import Sports from "../pages/Sports";
 import Users from "../pages/Users";
+import { Login } from '../pages/Login';
 
 type JSXComponent = () => JSX.Element;
 
